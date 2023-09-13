@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca Cola</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="Images/Coca Cola logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>I Love <br><span>This drink</span></h2>
+                <p>Introducing Coca-cola beverages the epitome of
+                   refreshment and pure delight. With each sip, y0u'll
+                   experience an explosion of fizzy perfection that awakens
+                   your senses and energizes your day.Our wide range of Cola-Cola 
+                   drinks offers somethong for everyone, from classic Cola-Cola Original Taste 
+                   to the bold and refreshing Coca-cola Zero sugar. With Coca-Cola beverages,
+                   every moment becomes a celebration , whether it's a gathering with friends,
+                   a picnic in the park, or simply enjoying a quiet evening at home.Let the 
+                   effervescent magic of Coca-Cola turn ordinary moments into extraordinary memories.
+                 </p>
+                 <a href="#">View all Products</a>
+            </div>
+            <div class="imgbox">
+                <img src="Images/Coca cola-3.png" class="Coca-Cola">
+            </div>>
+        </div>
+        <ul class="thumb">
+            <li><img src="Images/Coca cola-3.png" onclick="imgSlider('Images/Coca cola-3.png');changeBgColor('#f40000')"></li>
+            <li><img src="Images/Coca cola-2.png" onclick="imgSlider('Images/Coca cola-2.png');changeBgColor('#a7a7a7')">></li>
+            <li><img src="Images/Coca cola-1.png" onclick="imgSlider('Images/Coca cola-1.png');changeBgColor('#000000')">></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="Images/facebook-logo-png-2320.png"></a></li>
+            <li><a href="#"><img src="Images/logo-instagram-png-13547.png"></a></li>
+            <li><a href="#"><img src="Images/twitter-png-5964.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Coca-Cola').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html> 
